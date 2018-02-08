@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DRecycleView">
+        <attr name="x_decoration_color" format="color|reference" />
+        <attr name="x_decoration_width" format="dimension" />
+        <attr name="x_decoration_start_padding" format="dimension" />
+        <attr name="x_decoration_end_padding" format="dimension" />
+        <attr name="x_grid_layout" format="integer" />
+        <attr name="x_decoration_type">
+            <enum name="default_decoration" value="0" />
+            <enum name="custom_decoration" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
