@@ -5,10 +5,6 @@
         <attr name="x_decoration_width" format="dimension" />
         <attr name="x_decoration_start_padding" format="dimension" />
         <attr name="x_decoration_end_padding" format="dimension" />
-        <attr name="x_grid_layout" format="integer" />
-        <attr name="x_decoration_type">
-            <enum name="default_decoration" value="0" />
-            <enum name="custom_decoration" value="1" />
-        </attr>
+        <attr name="x_gridlayout_spanCount" format="integer" />
     </declare-styleable>
 </resources>

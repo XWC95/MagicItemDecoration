@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xwc.example.GridManagerActivity">
+
+
+    <!--  可以直接用被注释的效果是一样，这些属性都是默认的 -->
+    <com.xwc.itemdecoration.DRecycleView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:x_decoration_color="#D8D8D8"
+        app:x_decoration_end_padding="0dp"
+        app:x_decoration_start_padding="0dp"
+        app:x_decoration_width="1dp"
+        app:x_gridlayout_spanCount="3" />
+
+    <!--    <com.xwc.itemdecoration.DRecycleView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            app:x_gridlayout_spanCount="3"
+            android:layout_height="wrap_content" />-->
+</android.support.constraint.ConstraintLayout>

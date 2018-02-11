@@ -1,9 +1,8 @@
 package com.xwc.itemdecoration;
 
 /**
- * Created by mac on 2017/5/17.
+ * Created by xwc on 2018/2/7.
  */
-
 public class Divider {
 
     public SideLine leftSideLine;
@@ -18,7 +17,15 @@ public class Divider {
         this.rightSideLine = rightSideLine;
         this.bottomSideLine = bottomSideLine;
     }
+    public Divider create() {
+        SideLine defaultSideLine = new SideLine(false, 0, 0, 0, 0);
+        leftSideLine = (leftSideLine != null ? leftSideLine : defaultSideLine);
+        topSideLine = (topSideLine != null ? topSideLine : defaultSideLine);
+        rightSideLine = (rightSideLine != null ? rightSideLine : defaultSideLine);
+        bottomSideLine = (bottomSideLine != null ? bottomSideLine : defaultSideLine);
 
+        return new Divider(leftSideLine, topSideLine, rightSideLine, bottomSideLine);
+    }
     public SideLine getLeftSideLine() {
         return leftSideLine;
     }
