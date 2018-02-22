@@ -9,13 +9,79 @@ RecycleViw分割线
 ## 效果图
 <img src="app/src/main/image/example1.jpg" width="280px"/><img src="app/src/main/image/example2.jpg" width="280px"/><img src="app/src/main/image/example3.jpg" width="280px"/><img src="app/src/main/image/example4.jpg" width="280px"/>
 
-## How to use
-it's too easy to use,just look at the project code.
+#### 使用方式：
+ 
+ 
+#### 1.gradle
+```
+compile 'com.xwc:recyclerview-decoration:1.0.0' 
+```
 
-``` java
-compile 'com.xwc:recyclerview-decoration:1.0.0' //最新版本
+#### 2-1.使用xml方式配置：
 
 ```
+    <com.xwc.itemdecoration.DRecycleView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:x_decoration_color="#D8D8D8"        分割线颜色
+        app:x_decoration_end_padding="0dp"      末端边距
+        app:x_decoration_start_padding="0dp"    开始边距
+        app:x_decoration_width="1dp"            线宽
+        app:x_gridlayout_spanCount="3" />       使用GridLayoutManager并且一排三个，默认LinearLayoutManager
+```
+
+
+####2-2.使用Java代码方式配置：
+
+```
+   recycleView.addItemDecoration(new DRecycleViewDivider(this) {
+
+            @Nullable
+            @Override
+            public Divider getDivider(int itemPosition) {
+                Divider divider = null;
+                switch (itemPosition) {
+                    case 0:
+                        divider = new DividerBuilder()
+                                .setLeftSideLine(true, 0xFFFF0000, dip2px(16), 0, 0)
+                                .setRightSideLine(true, 0xFFFF0000, dip2px(16), 0, 0)
+                                .setBottomSideLine(true, 0xFF000000, dip2px(16), 0, 0)
+                                .setTopSideLine(true, 0xFF000000, dip2px(16), 0, 0)
+                                .create();
+                        break;
+                    case 1:
+                        divider = new DividerBuilder()
+                                .setLeftSideLine(true, 0xFF0000FF, dip2px(5), dip2px(8), dip2px(8))
+                                .setRightSideLine(true, 0xFF0000FF, dip2px(5), dip2px(8), dip2px(8))
+                                .setBottomSideLine(true, 0xFF0000FF, dip2px(16), 0, 0)
+                                .setTopSideLine(true, 0xFF0000FF, dip2px(16), 0, 0)
+                                .create();
+                        break;
+                    case 2:
+                        divider = new DividerBuilder()
+                                .setLeftSideLine(true, 0xFFFF0000, dip2px(15), 0, 0)
+                                .setRightSideLine(true, 0xFFFF0000, dip2px(15), 0, 0)
+                                .setBottomSideLine(true, 0xFFFF0000, dip2px(10), 0, dip2px(30))
+                                .setTopSideLine(true, 0xFFFF0000, dip2px(10), dip2px(8), dip2px(8))
+                                .create();
+                        break;
+                    case 3:
+                        divider = new DividerBuilder()
+                                .setBottomSideLine(true, Color.DKGRAY, dip2px(5), dip2px(10), dip2px(5))
+                                .create();
+                        break;
+                    default:
+                        divider = new DividerBuilder()
+                                .setBottomSideLine(true, Color.parseColor("#D8D8D8"), 1, 0, 0)
+                                .create();
+                        break;
+                }
+                return divider;
+            }
+        });
+```
+
 
 
 
