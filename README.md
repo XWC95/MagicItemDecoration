@@ -9,4 +9,14 @@ RecycleViw分割线
 ## 效果图
 <img src="app/src/main/image/example1.jpg" width="280px"/><img src="app/src/main/image/example2.jpg" width="280px"/><img src="app/src/main/image/example3.jpg" width="280px"/><img src="app/src/main/image/example4.jpg" width="280px"/>
 
+## it's too easy to use,just look at the code.
+
+``` java
+compile 'com.xwc:recyclerview-decoration:1.0.0' //最新版本
+
+```
+
+
+
+
 ## <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=947017886@qq.com" >联系邮箱</a>
