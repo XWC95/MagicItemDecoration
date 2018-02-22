@@ -40,18 +40,18 @@ public class CustomDividerLinearManagerActivity extends AppCompatActivity {
                 switch (itemPosition) {
                     case 0:
                         divider = new DividerBuilder()
-                                .setLeftSideLine(true, 0xFF000000, dip2px(8), dip2px(5), dip2px(5))
-                                .setRightSideLine(true, 0xFF000000, dip2px(16), dip2px(5), dip2px(5))
-                                .setBottomSideLine(true, 0xFF000000, dip2px(8), dip2px(5), dip2px(5))
+                                .setLeftSideLine(true, 0xFFFF0000, dip2px(16), 0, 0)
+                                .setRightSideLine(true, 0xFFFF0000, dip2px(16), 0, 0)
+                                .setBottomSideLine(true, 0xFF000000, dip2px(16), 0, 0)
                                 .setTopSideLine(true, 0xFF000000, dip2px(16), 0, 0)
                                 .create();
                         break;
                     case 1:
                         divider = new DividerBuilder()
-                                .setLeftSideLine(true, 0xFF0000FF, dip2px(10), dip2px(8), dip2px(8))
-                                .setRightSideLine(true, 0xFF0000FF, dip2px(10), dip2px(8), dip2px(8))
-                                .setBottomSideLine(true, 0xFF0000FF, dip2px(15), 0, 0)
-                                .setTopSideLine(true, 0xFF0000FF, dip2px(15), 0, 0)
+                                .setLeftSideLine(true, 0xFF0000FF, dip2px(5), dip2px(8), dip2px(8))
+                                .setRightSideLine(true, 0xFF0000FF, dip2px(5), dip2px(8), dip2px(8))
+                                .setBottomSideLine(true, 0xFF0000FF, dip2px(16), 0, 0)
+                                .setTopSideLine(true, 0xFF0000FF, dip2px(16), 0, 0)
                                 .create();
                         break;
                     case 2:
@@ -59,7 +59,7 @@ public class CustomDividerLinearManagerActivity extends AppCompatActivity {
                                 .setLeftSideLine(true, 0xFFFF0000, dip2px(15), 0, 0)
                                 .setRightSideLine(true, 0xFFFF0000, dip2px(15), 0, 0)
                                 .setBottomSideLine(true, 0xFFFF0000, dip2px(10), 0, dip2px(30))
-                                .setTopSideLine(true, 0xFFFF0000, dip2px(10), dip2px(8), 0)
+                                .setTopSideLine(true, 0xFFFF0000, dip2px(10), dip2px(8), dip2px(8))
                                 .create();
                         break;
                     case 3:
