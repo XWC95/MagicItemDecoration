@@ -14,7 +14,7 @@ RecycleViw分割线
  
 #### 1.gradle
 ```
-compile 'com.xwc:recyclerview-decoration:1.0.0' 
+compile 'com.xwc:recyclerview-decoration:1.0.1' 
 ```
 
 #### 2-1.使用xml方式配置：
